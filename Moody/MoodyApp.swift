@@ -9,12 +9,19 @@ import SwiftUI
 
 @main
 struct MoodyApp: App {
-    let persistenceController = PersistenceController.shared
+    
+    @StateObject var mind: Mind
+    
+    init() {
+        let mind = Mind.shared
+        _mind = StateObject(wrappedValue: mind)
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TodayView()
+                .environment(\.managedObjectContext, mind.container.viewContext)
+                .environmentObject(mind)
         }
     }
 }
