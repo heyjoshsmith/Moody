@@ -11,6 +11,7 @@ import SwiftUI
 struct MoodyApp: App {
     
     @StateObject var mind: Mind
+    @StateObject private var locationManager = LocationManager()
     
     init() {
         let mind = Mind.shared
@@ -19,9 +20,10 @@ struct MoodyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TodayView()
+            HomeView()
                 .environment(\.managedObjectContext, mind.container.viewContext)
                 .environmentObject(mind)
+                .environmentObject(locationManager)
         }
     }
 }

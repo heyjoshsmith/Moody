@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70A987A2925523C002DB486 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A98792925523C002DB486 /* LocationManager.swift */; };
+		A70A987C29256D76002DB486 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A987B29256D76002DB486 /* LocationView.swift */; };
 		A760858D291328B90084D065 /* MoodyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760858C291328B90084D065 /* MoodyApp.swift */; };
 		A760858F291328B90084D065 /* Mind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760858E291328B90084D065 /* Mind.swift */; };
 		A7608592291328B90084D065 /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7608590291328B90084D065 /* Moody.xcdatamodeld */; };
@@ -18,9 +20,14 @@
 		A76085A729132C710084D065 /* RatingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76085A629132C710084D065 /* RatingTool.swift */; };
 		A76085A929132E350084D065 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76085A829132E350084D065 /* Rating.swift */; };
 		A76085AB2913305B0084D065 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76085AA2913305B0084D065 /* TodayView.swift */; };
+		A78A1D712931C95200691F37 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78A1D702931C95200691F37 /* SwiftUIView.swift */; };
+		A78A1D742931CC4200691F37 /* VTabView in Frameworks */ = {isa = PBXBuildFile; productRef = A78A1D732931CC4200691F37 /* VTabView */; };
+		A78A1D762931CCFC00691F37 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78A1D752931CCFC00691F37 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A70A98792925523C002DB486 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Moody/Extensions/LocationManager.swift; sourceTree = SOURCE_ROOT; };
+		A70A987B29256D76002DB486 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		A7608589291328B90084D065 /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A760858C291328B90084D065 /* MoodyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyApp.swift; sourceTree = "<group>"; };
 		A760858E291328B90084D065 /* Mind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mind.swift; sourceTree = "<group>"; };
@@ -34,6 +41,9 @@
 		A76085A629132C710084D065 /* RatingTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTool.swift; sourceTree = "<group>"; };
 		A76085A829132E350084D065 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		A76085AA2913305B0084D065 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		A78A1D702931C95200691F37 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A78A1D752931CCFC00691F37 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A7D96A2629258920003B5CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78A1D742931CC4200691F37 /* VTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A72FA039291445F2003F62F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A70A98792925523C002DB486 /* LocationManager.swift */,
+				A76085A2291329EB0084D065 /* Mood.swift */,
+				A76085A829132E350084D065 /* Rating.swift */,
+				A76085A429132BD70084D065 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A72FA03A291445FB003F62F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A78A1D752931CCFC00691F37 /* HomeView.swift */,
+				A76085AA2913305B0084D065 /* TodayView.swift */,
+				A76085A629132C710084D065 /* RatingTool.swift */,
+				A76085A02913297E0084D065 /* CalendarView.swift */,
+				A70A987B29256D76002DB486 /* LocationView.swift */,
+				A78A1D702931C95200691F37 /* SwiftUIView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A7608580291328B90084D065 = {
 			isa = PBXGroup;
 			children = (
@@ -66,14 +101,11 @@
 		A760858B291328B90084D065 /* Moody */ = {
 			isa = PBXGroup;
 			children = (
+				A7D96A2629258920003B5CC6 /* Info.plist */,
 				A760858C291328B90084D065 /* MoodyApp.swift */,
 				A760858E291328B90084D065 /* Mind.swift */,
-				A76085A02913297E0084D065 /* CalendarView.swift */,
-				A76085AA2913305B0084D065 /* TodayView.swift */,
-				A76085A629132C710084D065 /* RatingTool.swift */,
-				A76085A2291329EB0084D065 /* Mood.swift */,
-				A76085A829132E350084D065 /* Rating.swift */,
-				A76085A429132BD70084D065 /* Date.swift */,
+				A72FA03A291445FB003F62F1 /* Views */,
+				A72FA039291445F2003F62F1 /* Extensions */,
 				A7608595291328BA0084D065 /* Assets.xcassets */,
 				A7608597291328BA0084D065 /* Moody.entitlements */,
 				A7608590291328B90084D065 /* Moody.xcdatamodeld */,
@@ -106,6 +138,9 @@
 			dependencies = (
 			);
 			name = Moody;
+			packageProductDependencies = (
+				A78A1D732931CC4200691F37 /* VTabView */,
+			);
 			productName = Moody;
 			productReference = A7608589291328B90084D065 /* Moody.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +169,9 @@
 				Base,
 			);
 			mainGroup = A7608580291328B90084D065;
+			packageReferences = (
+				A78A1D722931CC4200691F37 /* XCRemoteSwiftPackageReference "swiftui-vertical-tab-view" */,
+			);
 			productRefGroup = A760858A291328B90084D065 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,9 +200,13 @@
 			files = (
 				A76085A3291329EB0084D065 /* Mood.swift in Sources */,
 				A76085A529132BD70084D065 /* Date.swift in Sources */,
+				A78A1D762931CCFC00691F37 /* HomeView.swift in Sources */,
+				A78A1D712931C95200691F37 /* SwiftUIView.swift in Sources */,
+				A70A987A2925523C002DB486 /* LocationManager.swift in Sources */,
 				A760858D291328B90084D065 /* MoodyApp.swift in Sources */,
 				A76085A729132C710084D065 /* RatingTool.swift in Sources */,
 				A76085AB2913305B0084D065 /* TodayView.swift in Sources */,
+				A70A987C29256D76002DB486 /* LocationView.swift in Sources */,
 				A76085A929132E350084D065 /* Rating.swift in Sources */,
 				A7608592291328B90084D065 /* Moody.xcdatamodeld in Sources */,
 				A76085A12913297E0084D065 /* CalendarView.swift in Sources */,
@@ -291,12 +333,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Moody/Moody.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Moody/Preview Content\"";
 				DEVELOPMENT_TEAM = K6FKZVH5G5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moody/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to remind you to rate your mood when you leave work.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -329,12 +373,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Moody/Moody.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Moody/Preview Content\"";
 				DEVELOPMENT_TEAM = K6FKZVH5G5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moody/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to remind you to rate your mood when you leave work.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -382,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A78A1D722931CC4200691F37 /* XCRemoteSwiftPackageReference "swiftui-vertical-tab-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-vertical-tab-view.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A78A1D732931CC4200691F37 /* VTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A78A1D722931CC4200691F37 /* XCRemoteSwiftPackageReference "swiftui-vertical-tab-view" */;
+			productName = VTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A7608590291328B90084D065 /* Moody.xcdatamodeld */ = {
